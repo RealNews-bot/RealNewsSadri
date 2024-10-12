@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RealNews Channel</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3 { font-family: "Montserrat", sans-serif; }
+        body { background-color: #222; }
+        #main { 
+            margin: 20px auto; 
+            max-width: 90%;
+            background-color: #222; 
+            border-radius: 20px; 
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        h1, h2 { color: #fff; }
+        p { color: #d1d1d1; font-size: 16px; line-height: 1.6; }
+        .highlight { color: cyan; font-weight: bold; }
+        .red-heading { color: red; }
+        .video-container {
+            position: relative;
+            margin: 20px auto;
+            width: 100%; /* Full width of parent container */
+            max-width: 800px; /* Maximum width for large screens */
+            background-color: #222;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        video {
+            border-radius: 20px;
+            width: 100%; /* Responsive width */
+            height: auto;
+        }
+        .play-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+        .play-overlay:hover {
+            opacity: 0.7;
+        }
+        .play-overlay i {
+            color: white;
+            font-size: 48px;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 24px; }
+            h2 { font-size: 20px; }
+            p { font-size: 14px; }
+            #main { padding: 15px; }
+            .video-container {
+                max-width: 100%; /* Adjust video width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body class="w3-black">
+
+<!-- Page Content -->
+<div id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center">
+        <h1 class="w3-jumbo">RealNews</h1>
+        <p>Your source for the latest updates and news.</p>
+        <img src="/w3images/news.jpg" alt="News" class="w3-image" width="100%">
+    </header>
+
+    <!-- About Section -->
+    <div class="video-container">
+        <video id="myVideo" controls>
+            <source src="video1.mp4" type="video/mp4">
+            <source src="video1.mp4" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <div class="play-overlay" onclick="playVideo()">
+            <i class="fa fa-play" aria-hidden="true"></i>
+        </div>
+    </div>
+    
+    <div class="w3-content w3-justify w3-padding-64" id="about">
+        <h2 class="red-heading">Allegations Against Madan Ji Mali</h2>
+        <p>*9.10.2024* को *मदन जी माली* के घर पर जो हादसा हुआ, उस हादसे के पीछे क्या राज़ है, ये न जानते हुए भी हमारे समाज के कुछ गिरे हुए लोगों ने मदन जी माली को बदनाम करने की साज़िश रची। आज मैं आपको बताता हूँ कि ये हादसा क्यों हुआ। *पिंकी कुमारी* को न्यायालय से न्याय दिलवाने का आश्वासन दिया गया था, लेकिन पिंकी कुमारी *रोज़* मदन जी के घर जाकर उन्हें *गालियाँ देती* थी और *जान से मारने* की धमकी देती थी। मदन जी माली के घर पर जितने *सीसीटीवी कैमरे लगे थे, उन्हें तोड़ा गया* , और उनकी गाड़ियों के *शीशे* तोड़ने की कोशिश की गई। *कल जो हादसा हुआ,* उसमें सबसे *पहले पिंकी कुमारी ने उनके घर जाकर मदन जी माली और उनकी पत्नी को गालियाँ देना शुरू किया* । फिर मदन जी माली की पत्नी उन्हें समझाने के लिए अकेली घर से बाहर आईं। तभी पिंकी कुमारी और उसका छोटा बच्चा, जो एक *लठ* लेकर खड़ा था, दोनों ने उन्हें मारने की कोशिश की और *पिंकी कुमारी ने मदन जी माली की पत्नी का गला घोंटने की कोशिश की।* *तभी विजय कुमार घर पर आए* । उस हालात में अपनी *माँ को इस स्थिति में देखकर कौन बेटा चुप रहता?* कौन पति चुप रहता? और जो न्यूज़ में बताया जा रहा है कि एक विवाहित महिला को लाठी-डंडों से बीच सड़क पर बेरहमी से मारा गया, *ये बिल्कुल गलत है। लाठी-डंडे तो पिंकी कुमारी और उसके बच्चे लेकर आए थे मारने के लिए।* *मेरा आपसे एक ही अनुरोध है कि कृपया करके एक सम्माननीय पुरुष को बदनाम न करें।*</p>
+
+        <h2 class="red-heading">Background of the Incident</h2>
+        <p>Pinky Kumari had previously been assured that she would receive justice through the court. However, she repeatedly visited Madan Ji's home, hurling insults and making threats. Tensions escalated when Pinky allegedly attempted to break into the home, damaging property, including cameras and vehicles.</p>
+
+        <h2 class="red-heading">Escalation of Conflict</h2>
+        <p>On the day of the incident, Pinky Kumari approached Madan Ji and his wife, initiating a verbal confrontation. When Madan Ji’s wife tried to mediate, Pinky and her child attempted to attack her. In the heat of the moment, Vijay Kumar, Madan Ji's son, arrived home. Any son would instinctively react to protect his mother in such a distressing situation.</p>
+
+        <h2 class="red-heading">Misrepresentation of Events</h2>
+        <p>Reports suggesting that a married woman was violently attacked in the street are misleading. Pinky Kumari and her child came armed with sticks, allegedly intending to cause harm. The narrative presented to the public does not accurately reflect the reality of the events.</p>
+
+        <h2 class="red-heading">Video Evidence and Documentation</h2>
+        <p>We possess four significant pieces of video evidence that support our claims:</p>
+        <ul>
+            <li>A video showing Pinky, along with her two children, vandalizing property at Madan Ji’s residence during the winter season.</li>
+            <li>A clear recording of the incidents that occurred on June 27 and October 9, illustrating the actual events as they unfolded.</li>
+            <li>Footage capturing Pinky and her children stealing items from the house after gaining unauthorized entry, further indicating their intentions.</li>
+            <li>A video demonstrating that Chetan, a family member, was merely defending himself against Pinky’s aggressive behavior when she confronted him at home.</li>
+        </ul>
+
+        <h2 class="red-heading">Clarification on Financial Support</h2>
+        <p>Despite the ongoing turmoil, our family continues to provide financial support to Pinky. Additionally, we are open to matrimonial arrangements for our sons. Yet, it is concerning that Pinky continues to torment our family and incite unrest.</p>
+
+        <h2 class="red-heading">Concluding Remarks</h2>
+        <p>We respectfully request that the media and the public refrain from hastily drawing conclusions based solely on surface-level accounts. It is imperative to consider all facts and evidence before forming judgments. Misrepresentation can cause irreparable harm to individuals and families.</p>
+    </div>
+</div>
+
+<script>
+    const video = document.getElementById('myVideo');
+    const overlay = document.querySelector('.play-overlay');
+
+    function playVideo() {
+        if (video.paused) {
+            video.play();
+            overlay.style.display = 'none'; // Hide the overlay when the video is playing
+        } else {
+            video.pause();
+            overlay.style.display = 'flex'; // Show the overlay again when the video is paused
+        }
+    }
+</script>
+</body>
+</html>
